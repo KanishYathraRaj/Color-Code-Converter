@@ -9,7 +9,7 @@ st.markdown("""
             font-size: 2.5rem;
             font-weight: bold;
             color: white;
-            background: linear-gradient(90deg, #008000, #00ff00);
+            background: linear-gradient(90deg, #000000, #333333);
             padding: 10px;
             border-radius: 10px;
         }
