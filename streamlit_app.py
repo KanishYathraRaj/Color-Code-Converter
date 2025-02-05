@@ -36,9 +36,9 @@ st.markdown("""
 st.markdown('<div class="title">HSV to RGB Converter</div>', unsafe_allow_html=True)
 
 st.sidebar.header("Adjust HSV Values")
-hue = st.sidebar.slider("Hue", 0, 360, 180)
-saturation = st.sidebar.slider("Saturation", 0, 100, 100)
-value = st.sidebar.slider("Value", 0, 100, 100)
+hue = st.sidebar.slider("Hue", 0, 360, 0)
+saturation = st.sidebar.slider("Saturation", 0, 100, 0)
+value = st.sidebar.slider("Value", 0, 100, 0)
 
 r, g, b = colorsys.hsv_to_rgb(hue / 360, saturation / 100, value / 100)
 rgb_tuple = (int(r * 255), int(g * 255), int(b * 255))
@@ -63,4 +63,4 @@ st.button("📋 Copy RGB", on_click=copy_rgb)
 
 st.expander("More Info").write("HSV (Hue, Saturation, Value) is a color representation model where Hue defines the color type, Saturation defines intensity, and Value defines brightness.")
 
-st.markdown('<div class="footer">Made with ❤️ using Streamlit</div>', unsafe_allow_html=True)
+st.markdown('<div class="footer">Made with ❤️ using Streamlit </div>', unsafe_allow_html=True)
